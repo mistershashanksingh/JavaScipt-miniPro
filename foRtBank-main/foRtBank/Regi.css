@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    /*overflow-y: scroll;
+     overflow: hidden; */
+    padding: 0;
+    box-sizing:border-box ;
+}
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+  }
+
+form {
+    padding: 10px;
+    line-height: 10px
+}
+
+main {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: beige;
+}
+section
+{
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/7th.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    padding: 50px 100px;
+    position: relative;
+}
+.imgcontainer {
+    text-align: center;
+    /*border-radius: 500%;*/
+    margin: 20px 12px;
+}
+
+p {
+    font-family: Open Sans;
+    color: black;
+    border-bottom: 1.50px solid rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(212, 206, 206, 0.945);
+}
+
+button {
+    background-color: rgba(199, 199, 199, 0.486);
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+}
+
+button:hover {
+    opacity: 3.56;
+}
+span
+{
+    background-color: beige;
+    text-size-adjust: 1px;
+}
+select
+{
+    background-color: rgba(240, 248, 255, 0.623);
+}
+input
+{
+    background-color: rgba(240, 248, 255, 0.74);
+}

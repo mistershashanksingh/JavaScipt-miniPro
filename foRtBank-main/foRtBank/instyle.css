@@ -1,0 +1,320 @@
+@import url('https://fonts.google.com/specimen/Poppins?preview.size=34&query=Popp#standard-styles');
+body {
+  margin: 0;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+  padding: 0;
+  box-sizing:border-box ;
+  font-family:'Poppins', sans-serif;
+}
+@keyframes animator 
+{
+  0%
+  {
+    background-image: url(images/1st.png);
+  }
+  10%
+  {
+    background-image: url(images/2nd.jpg);
+  }
+  20%
+  {
+    background-image: url(images/3rd.jpg);
+  }
+  40%
+  {
+    background-image: url(images/4th.jpg);
+  }
+  60%
+  {
+    background-image: url(images/5th.cms);
+  }
+  80%
+  {
+    background-image: url(images/6th.jpg);
+  }
+  100%
+  {
+    background-image: url(images/7th.jpg);
+  }
+}
+section
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/7th.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+  animation-name: animator ;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+section h2
+{
+  font-size: 16vw;
+  color: #000;
+  background: rgba(245, 245, 245, 0.836);
+  padding: 20px 40px;
+  mix-blend-mode: screen;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/*****************************************Header Styles *************************************************/
+
+ul,
+nav {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    opacity: 1;
+    color: rgb(199, 199, 199);
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: #3f51b5;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+a.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+}
+
+header {
+    width: 95%;
+    color: rgb(160, 211, 245);
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    align-items: center;
+    animation: 1s animate 0.5s forwards;
+    opacity: 0;
+    padding: 20px auto;
+}
+
+@keyframes animate {
+    100% {
+        opacity: 1;
+    }
+}
+
+header h2 {
+  margin-left: 5%;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li{
+    padding: 0 15px;
+    font-size: 0.7cm;
+}
+
+@media (max-width: 800px) {
+
+    #content {
+      flex-direction: column;
+    }
+    header {
+        /* padding: 20px 50px; */
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 12px;
+    }
+}
+
+/******************************************* BODY CONTENT ***********************************/
+#content {
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+/********************************************* CONTENT STYLING ************************************/
+.Site-Title {
+  text-align: center;
+  color: rgb(211, 194, 194);
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  flex: 1;
+  padding: 30px auto;
+  padding-top: 50px;
+}
+
+.Tagline {
+  color: rgba(255, 255, 255, 0.541);
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.Tagline h1 {
+  color: #ebebebe8;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 40px;
+  margin-bottom: 5px;
+  display: inline-block;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+}
+
+.Tagline h3 {
+  color: #ffffffec;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10%;
+  left: 30%;
+  right: 30%;
+  display: inline-block;
+  position: absolute;
+}
+
+.button {
+  color: white;
+  background-color: #292c2f;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+}
+
+.buttons-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/******************************************* FOOTER STYLING ***********************************/
+footer {
+  position: relative;
+  text-align: center;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font: bold 16px;
+}
+
+.footer-distributed {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  margin: 10px;
+  padding: 5px;
+}
+
+.footer-links a:hover {
+  background-color: black;
+  text-decoration: underline;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  /* margin: 0; */
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-icons a:hover {
+  background-color: black;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+}
