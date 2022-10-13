@@ -1,0 +1,61 @@
+body{
+    font-family: OpenSans-Regular,"PingFang SC","Microsoft YaHei",sans-serif,Arial;
+    font-size: 5mm;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    color: rgba(214, 214, 214, 0.856);
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background:scroll;
+    background-image:  linear-gradient(rgba(48, 48, 48, 0.342), rgba(66, 66, 66, 0.644)),url(../img/tesla-model-y.jpg);
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+        /* Remove scrollbar space */
+        background: transparent;
+        /* Optional: just make scrollbar invisible */
+      }
+    .header {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        margin-bottom: 3mm;
+        left: 0;
+      }
+      .header__announcement {
+        padding: 1rem;
+        background-color: rgb(24, 24, 24);
+        text-align: center;
+      }
+      .header__announcement a {
+        color: var(--text-color);
+      }
+      .header__nav-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+      }
+      .header__nav {
+        position: relative;
+        display: flex;
+      }
+      .header__nav a {
+        color:#a30000;
+        text-decoration: none;
+        padding: 0.3rem 1rem;
+        font-weight: bold;
+      }
+      .header_up{
+         margin-top: 3cm;
+      }
+      div{
+        text-align: center;
+      }
+      strong{
+        text-decoration: underline;
+        text-decoration-thickness: 0.2em;
+      }
